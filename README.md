@@ -1,0 +1,1 @@
+Miscellaneous code from lessons or just random ideas.
