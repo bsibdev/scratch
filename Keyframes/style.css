@@ -12,30 +12,48 @@
     background-color:red;
     border:1px solid black;
     border-radius: 50%;
-    animation-duration:5s;
+    animation: 5s infinite alternate 1s;
+    animation-name:grow-shift,color-shift;
+    /*animation-duration:5s;
+    animation-delay:1s;
     animation-name:change-color;
     animation-iteration-count:infinite;
-    animation-direction:alternate
+    animation-direction:alternate;*/
 }
 
-@keyframes change-color {
+@keyframes grow-shift {
+    from {
+    }
+    30% {
+        transform:scale(2);
+    }
+    60% {
+        transform:scale(1.5);
+    }
+    90% {
+        transform:scale(2.5);
+    }
+    to {
+        transform:scale(10);
+    }
+
+    
+}
+
+@keyframes color-shift {
     from {
         background-color:red;
     }
     30% {
         background-color:purple;
-        transform:scale(2);
     }
     60% {
         background-color:blue;
-        transform:scale(1.5);
     }
     90% {
         background-color:purple;
-        transform:scale(2.5);
     }
     to {
         background-color:purple;
-        transform:scale(10);
     }
 }
