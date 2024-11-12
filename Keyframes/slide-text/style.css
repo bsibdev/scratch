@@ -1,0 +1,25 @@
+img {
+    height:200px;
+}
+
+.slid {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    animation:2s infinite normal;
+    animation-name:slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        translate:150vw 0;
+        scale:200% 1;
+    }
+
+    to {
+        translate:0 0;
+        scale:100% 1;
+
+    }
+}
